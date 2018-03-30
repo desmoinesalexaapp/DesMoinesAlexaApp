@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda function for Alexa
 Resources:
   TestFunction:
-    Type: AWS::Serverless::Function
+    Type: arn:aws:lambda:us-east-1:685813735696:function:TestFunction
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
