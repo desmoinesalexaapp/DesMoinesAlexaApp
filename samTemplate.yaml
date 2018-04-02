@@ -7,3 +7,4 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       Role: AWSLambdaExecute
+      Code: index.js
