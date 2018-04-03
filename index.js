@@ -9,7 +9,7 @@ const AWS = require('aws-sdk');
 AWS.config.update({
   region: "us-east-2"
 });
-//testing
+
 const dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 
 exports.handler = function (event, context) {
