@@ -6,10 +6,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      Role: 
-        Fn::GetAtt: 
-          - "arn:aws:iam::685813735696:role/AWSLambdaExecute"
-          - "arn"
+      Role: arn:aws:iam::685813735696:role/AWSLambdaExecute
       Code:
         "S3Bucket": "deployment.bucket.des.moines"
         "S3Key": "src.zip"
