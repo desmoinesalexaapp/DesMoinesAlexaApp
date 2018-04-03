@@ -1,9 +1,9 @@
-version: 0.2
+version: 0.3
 phases:
   install:
     commands:
       - npm install
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket deployment.bucket.des.moines --output-template-file outputSamTemplate.yaml
+      - aws s3 sync . s3://deployment.bucket.des.moines
 artifacts:
   type: zip
   files:
