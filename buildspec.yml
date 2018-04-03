@@ -2,7 +2,6 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install
       - aws s3 sync . s3://deployment.bucket.des.moines
 artifacts:
   type: zip
