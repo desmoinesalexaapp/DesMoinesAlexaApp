@@ -8,8 +8,8 @@ Resources:
       Runtime: nodejs6.10
       Role: 
         Fn::GetAtt: 
+          - "AWSLambdaExecute"
           - "arn:aws:iam::685813735696:role/AWSLambdaExecute"
-          - "Arn"
       Code:
         "S3Bucket": "deployment.bucket.des.moines"
         "S3Key": "src.zip"
