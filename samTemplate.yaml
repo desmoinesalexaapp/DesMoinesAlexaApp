@@ -10,3 +10,4 @@ Resources:
       Code:
         "S3Bucket": "deployment.bucket.des.moines"
         "S3Key": "src.zip"
+        
